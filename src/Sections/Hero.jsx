@@ -120,7 +120,7 @@ const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
+                  src="/profile-photo-1.png"
                   alt="Arnav Umarkar"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
