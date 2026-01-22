@@ -39,13 +39,13 @@ const experiences = [
 
 const Experience = () => {
 	return (
-		<section id="experience" className="py-32 relative container">
-			<div className="container px-6 relative z-10">
+		<section id="experience" className="py-32 w-full mx-auto relative container">
+			<div className="container px-6 w-full mx-auto relative z-10">
 				{/* Section Header */}
 				<div className="max-w-3xl relative mx-auto mb-16">
-          {/* Header Glows */}
-			    <div className="absolute mx-auto top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 z-10" />
-          <div className="absolute mx-auto top-1/4 left-3/4 w-96 h-96 bg-highlight/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 " />
+	          		{/* Header Glows */}
+				    <div className="absolute mx-auto top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 z-10" />
+	          		<div className="absolute mx-auto top-1/4 left-3/4 w-96 h-96 bg-highlight/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 " />
 
 					<span className="w-full block text-center text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
 						Career Journey
