@@ -23,7 +23,7 @@ const skills = [
   "GitHub Actions",
 ];
 
-const Hero = () => {
+const Hero = ({setShowCv}) => {
    return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
@@ -87,7 +87,7 @@ const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={() => setShowCv(prev => !prev)}>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton> 
@@ -177,6 +177,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
+    
   )
 }
 export default Hero

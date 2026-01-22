@@ -1,5 +1,5 @@
 
-export const AnimatedBorderButton = ({ children }) => {
+export const AnimatedBorderButton = ({ children, ...props }) => {
   return (
     <button
       className="relative bg-transparent border border-border 
@@ -9,6 +9,7 @@ export const AnimatedBorderButton = ({ children }) => {
         disabled:opacity-50 disabled:cursor-not-allowed group 
         px-8 py-4 text-lg font-medium rounded-full overflow-visible 
         animated-border"
+        {...props}
     >
       {/* Animated SVG Border */}
       <svg
