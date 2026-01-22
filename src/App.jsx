@@ -1,4 +1,4 @@
-import { Footer } from "@/layout/Footer"
+import { Footer } from "./layout/Footer"
 import Navbar from "./layout/Navbar"
 import About from "./Sections/About"
 import Contact from "./Sections/Contact"

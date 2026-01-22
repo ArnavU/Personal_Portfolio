@@ -1,4 +1,4 @@
-import {Button} from "@/components/button"
+import {Button} from "../components/button"
 import {AnimatedBorderButton} from "../components/AnimatedBorderButton"
 import {ArrowRight, ChevronDown, Download, Github, Linkedin} from "lucide-react"
 
