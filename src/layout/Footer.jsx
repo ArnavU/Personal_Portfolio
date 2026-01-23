@@ -1,9 +1,9 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { GITHUB_URL, LINKEDIN_URL } from "../data/constants";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: GITHUB_URL, label: "GitHub" },
+  { icon: Linkedin, href: LINKEDIN_URL, label: "LinkedIn" },
 ];
 
 const footerLinks = [
@@ -25,7 +25,7 @@ export const Footer = () => {
               Arnav<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              @ {currentYear} Arnav Umarkar. All rights reserved.
+              © {currentYear} Arnav Umarkar. Built with passion and code. 
             </p>
           </div>
 

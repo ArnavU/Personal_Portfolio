@@ -1,41 +1,64 @@
 const experiences = [
 	{
-		period: "2022 — Present",
-		role: "Senior Frontend Engineer",
-		company: "Tech Innovators Inc.",
+		period: "Jan 2025 — May 2025",
+		type: "experience",
+		role: "Industry Project – Full Stack Developer",
+		company: "Wisdomaura",
 		description:
-			"Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers",
-		technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+	"Built a MOOC (Massive Open Online Courses) platform enabling multiple institutes with role-based access for Admins, HoDs, Faculty, and Students. Implemented 30+ REST APIs with secure authentication, course and media management, payments, and auto-generated certificates.",
+
+		technologies: [
+			"MongoDB",
+			"Express",
+			"React",
+			"Node.js",
+			"Redux",
+			"JWT",
+			"Razorpay",
+			"Cloudinary",
+		],
 		current: true,
 	},
 	{
-		period: "2020 — 2022",
-		role: "Frontend Engineer",
-		company: "Digital Solutions Co.",
+		period: "Aug 2024 — Feb 2025",
+		type: "experience",
+		role: "Software Developer Intern",
+		company: "People Prudent",
 		description:
-			"Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-		technologies: ["React", "Redux", "Jest", "Cypress"],
+			"Developed a TED (Time Effort Delivery) system with role-based access, secure file uploads, automated reminders, and analytics dashboards.",
+		technologies: [
+			"React",
+			"Node.js",
+			"Express",
+			"MongoDB",
+			"Microsoft Graph API",
+			"Chart.js",
+			"NodeMailer",
+		],
 		current: false,
 	},
 	{
-		period: "2019 — 2020",
-		role: "Junior Developer",
-		company: "StartUp Labs",
+		period: "Nov 2021 — May 2025",
+		type: "education",
+		role: "B.Tech in Information Technology",
+		company: "Vishwakarma Institute of Information Technology, Pune",
 		description:
-			"Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-		technologies: ["React", "Node.js", "MongoDB", "AWS"],
+			"Completed B.Tech with 9.04 CGPA, strong focus on problem-solving, and solved 1000+ DSA problems alongside full-stack development.",
+		technologies: ["DSA", "OOP", "DBMS", "OS", "Computer Networks"],
 		current: false,
 	},
 	{
-		period: "2018 — 2019",
-		role: "Freelance Developer",
-		company: "Self-Employed",
+		period: "May 2019 — May 2021",
+		type: "education",
+		role: "Higher Secondary (12th)",
+		company: "Bajaj College of Science, Wardha, Maharashtra",
 		description:
-			"Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-		technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+			"Completed higher secondary education in Science stream with 90.33%, building a strong foundation in mathematics and analytical thinking.",
+		technologies: ["Mathematics", "Physics", "Chemistry"],
 		current: false,
 	},
 ];
+
 
 const Experience = () => {
 	return (
@@ -58,9 +81,7 @@ const Experience = () => {
 					</h2>
 
 					<p className="text-center text-muted-foreground animate-fade-in animation-delay-200">
-						A timeline of my professional growth, from curious
-						beginner to senior engineer leading teams and building
-						products at scale.
+						A snapshot of my hands-on experience building scalable, production-ready applications.
 					</p>
 				</div>
 

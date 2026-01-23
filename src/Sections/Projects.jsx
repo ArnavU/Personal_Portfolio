@@ -1,42 +1,34 @@
 import { ArrowUpRight, Github } from "lucide-react";
+import { GITHUB_CRS_URL, GITHUB_MOOC_URL, GITHUB_MOVIE_BIRD_URL, PROJECT_CRS_URL, PROJECT_MOOC_URL, PROJECT_MOVIE_BIRD_URL } from "../data/constants";
 
 const projects = [
-	{
-		title: "Fintech Dashboard",
-		description:
-			"A comprehensive finacial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-		image: "/projects/project1.png",
-		tags: ["React", "Typescript", "NodeJS"],
-		link: "#",
-		github: "#",
-	},
-	{
-		title: "E-Commerce Platform",
-		description:
-			"A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-		image: "/projects/project2.png",
-		tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-		link: "#",
-		github: "#",
-	},
-	{
-		title: "AI Writing Assistant",
-		description:
-			"An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-		image: "/projects/project3.png",
-		tags: ["React", "OpenAI", "Python", "FastAPI"],
-		link: "#",
-		github: "#",
-	},
-	{
-		title: "Project Management Tool",
-		description:
-			"A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-		image: "/projects/project4.png",
-		tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-		link: "#",
-		github: "#",
-	},
+  {
+    title: "MyMOOC – Multi-Institute MOOC Platform",
+    description:
+      "A Massive Open Online Course (MOOC) platform supporting multiple institutes with role-based access, course and media management, secure payments, and auto-generated certificates.",
+    image: "/projects/project1.png",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Redux", "Razorpay"],
+    link: PROJECT_MOOC_URL,
+    github: GITHUB_MOOC_URL,
+  },
+  {
+    title: "College Finder & Recommendation System",
+    description:
+      "A college prediction system for CET & JEE students using rank, percentile, category, and preferences, powered by PDF data extraction and AI-enhanced insights.",
+    image: "/projects/project2.png",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Python"],
+    link: PROJECT_CRS_URL,
+    github: GITHUB_CRS_URL,
+  },
+  {
+    title: "MovieBird – Movie Discovery Platform",
+    description:
+      "A Netflix-like movie discovery app with authentication, trailer playback, and AI-powered genre-based recommendations.",
+    image: "/projects/project3.png",
+    tags: ["React", "Redux Toolkit", "Tailwind CSS", "Firebase", "OpenAI"],
+    link: PROJECT_MOVIE_BIRD_URL,
+    github: GITHUB_MOVIE_BIRD_URL,
+  },
 ];
 
 const Projects = () => {
@@ -86,12 +78,14 @@ const Projects = () => {
 								<div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 									<a
 										href={project.link}
+										target="_blank"
 										className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
 									>
 										<ArrowUpRight className="w-5 h-5" />
 									</a>
 									<a
 										href={project.github}
+										target="_blank"
 										className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
 									>
 										<Github className="w-5 h-5" />
@@ -105,7 +99,9 @@ const Projects = () => {
 									<h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
 										{project.title}
 									</h3>
-									<ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+									<a href={project.link} target="_blank">
+										<ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+									</a>
 								</div>
 								<p className="text-muted-foreground text-sm">
 									{project.description}

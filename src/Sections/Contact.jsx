@@ -20,14 +20,14 @@ const contactInfo = [
 	{
 		icon: Phone,
 		label: "Phone",
-		value: "+1 (555) 123-4567",
-		href: "tel:+15551234567",
+		value: "+91 8010489380",
+		href: "tel:+918010489380",
 	},
 	{
 		icon: MapPin,
 		label: "Location",
 		value: "India, Pune, Maharashtra",
-		href: "#",
+		href: "https://maps.app.goo.gl/ajLpSuRNtu8xAKMa8",
 	},
 ];
 
@@ -180,8 +180,12 @@ const Contact = () => {
 
 							{submitStatus.type && (
 								<div
-									className={`flex items-center gap-3 p-4 rounded-xl`}
-								>
+				                  	className={`flex items-center gap-3 p-4 rounded-xl ${
+					                    submitStatus.type === "success"
+										? "bg-green-500/10 border border-green-500/20 text-green-400"
+										: "bg-red-500/10 border border-red-500/20 text-red-400"
+				                    }`}
+				                >
 									{submitStatus.type === "success" ? (
 										<CheckCircle className="w-5 h-5 flex-shrink-0" />
 									) : (
@@ -203,6 +207,8 @@ const Contact = () => {
 								{contactInfo.map((item, i) => (
 									<a
 										key={i}
+										target="_blank"
+										rel="noopener noreferrer"
 										href={item.href}
 										className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
 									>

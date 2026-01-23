@@ -45,30 +45,19 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I’m a passionate software developer with a strong foundation in full-stack web development and hands-on experience building real-world applications. My journey began with curiosity about how web applications work and evolved into a deep focus on problem-solving and writing scalable, efficient code.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I primarily work with the MERN stack (MongoDB, Express, React, Node.js) and enjoy building everything from intuitive user interfaces to robust backend systems. I’ve solved 1000+ data structures and algorithms problems on LeetCode, which has strengthened my analytical thinking and ability to tackle complex engineering challenges.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Beyond development, I actively explore modern technologies, refine my problem-solving skills, and enjoy turning ideas into production-ready software. I’m always eager to learn, grow, and contribute to impactful engineering teams.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                “My mission is to build reliable, scalable software grounded in strong engineering fundamentals — systems that are efficient, maintainable, and solve real-world problems.”
               </p>
             </div>
           </div> {/* Left Column End */}

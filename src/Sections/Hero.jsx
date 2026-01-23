@@ -1,26 +1,26 @@
 import {Button} from "../components/Button"
 import {AnimatedBorderButton} from "../components/AnimatedBorderButton"
 import {ArrowRight, ChevronDown, Download, Github, Linkedin} from "lucide-react"
+import { GITHUB_URL, LINKEDIN_URL } from "../data/constants";
 
 const skills = [
   "React",
-  "Next.js",
-  "TypeScript",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "C++",
+  "Java",
+  "Next.js",
+  "JavaScript",
+  "Express.js",
+  "REST APIs",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
+  "MySQL",
+  "Render",
   "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
   "Git",
   "GitHub Actions",
+  "Data Structures & Algorithms",
+  "Problem Solving",
 ];
 
 const Hero = ({setShowCv}) => {
@@ -60,7 +60,7 @@ const Hero = ({setShowCv}) => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineer • Algorithms & Systems
               </span>
             </div>
 
@@ -76,17 +76,17 @@ const Hero = ({setShowCv}) => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Arnav Umarkar — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I’m Arnav Umarkar — a software engineer specializing in React, Node.js, and JavaScript, focused on building scalable, performant, and reliable software.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
               <AnimatedBorderButton onClick={() => setShowCv(prev => !prev)}>
                 <Download className="w-5 h-5" />
                 Download CV
@@ -97,12 +97,13 @@ const Hero = ({setShowCv}) => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" }
+                { icon: Github, href: GITHUB_URL },
+                { icon: Linkedin, href: LINKEDIN_URL }
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
