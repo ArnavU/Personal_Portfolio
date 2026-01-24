@@ -6,25 +6,25 @@ const testimonials = [
 		quote: "Working with Arnav was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
 		author: "Harshdeep Khartade",
 		role: "VIIT - Pune",
-		avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+		avatar: "/profile1.svg",
 	},
 	{
 		quote: "Arnav is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
 		author: "Vedant Kavhar",
 		role: "VIIT - Pune",
-		avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+		avatar: "/profile2.svg",
 	},
 	{
 		quote: "Not only is Arnav technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
 		author: "Abhay Baral",
 		role: "VIIT - Pune",
-		avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+		avatar: "/profile3.svg",
 	},
 	{
 		quote: "Arnav's expertise in React and Node.Js helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
 		author: "Rohan Nikumbh",
 		role: "VIIT - Pune",
-		avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+		avatar: "/profile4.svg",
 	},
 ];
 
