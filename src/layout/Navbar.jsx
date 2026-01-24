@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Button } from "../components/Button";
 import {Menu, X} from "lucide-react"
 
@@ -13,12 +13,28 @@ const navLinks = [
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const menuBtnRef = useRef(null);
+    const mobileMenuRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50)
         }
+
+        const handleOutsieClick = (e) => {
+            if(menuBtnRef.current?.contains(e.target) || mobileMenuRef.current?.contains(e.target)) {
+                return;
+            }
+            setIsMobileMenuOpen(false);
+        }
+
+        window.addEventListener("click", handleOutsieClick);
         window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("click", handleOutsieClick);
+            window.removeEventListener("scroll", handleScroll);
+        }
     }, []);
 
 
@@ -60,16 +76,19 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden p-2 text-foreground cursor-pointer"
+                    ref={menuBtnRef}
+                    className="relative md:hidden p-2 text-foreground cursor-pointer"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                 >
+                    {/* self closing div to cover the "X" SVG - svg hinders the outside click functionality */}
+                    <div className="w-full h-full absolute inset-0" /> 
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </nav> 
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden glass-strong animate-fade-in">
+                <div ref={mobileMenuRef} className="md:hidden glass-strong animate-fade-in">
                     <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                         {navLinks.map((link, index) => (
                             <a
