@@ -1,8 +1,8 @@
 import {Button} from "../components/Button"
 import {AnimatedBorderButton} from "../components/AnimatedBorderButton"
-import {ArrowRight, ChevronDown, Download, Github, Linkedin} from "lucide-react"
+import {ArrowRight, Download, Github, Linkedin} from "lucide-react"
 import { GITHUB_URL, LINKEDIN_URL } from "../data/constants";
-import Skills from "./Skills";
+// import Skills from "./Skills";
 
 const Hero = ({setShowCv}) => {
    return (
