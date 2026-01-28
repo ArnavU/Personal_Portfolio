@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- Large JSON brackets -->
+  <path d="M30 30 C20 30, 20 50, 20 64 C20 78, 20 98, 30 98" 
+        stroke="#2563EB" stroke-width="5" fill="none" stroke-linecap="round" />
+  
+  <path d="M98 30 C108 30, 108 50, 108 64 C108 78, 108 98, 98 98" 
+        stroke="#2563EB" stroke-width="5" fill="none" stroke-linecap="round" />
+  
+  <!-- Network structure inside brackets -->
+  <circle cx="64" cy="64" r="8" fill="#2563EB" />
+  
+  <!-- Connection lines -->
+  <line x1="64" y1="64" x2="48" y2="48" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+  <line x1="64" y1="64" x2="80" y2="48" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+  <line x1="64" y1="64" x2="80" y2="80" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+  <line x1="64" y1="64" x2="48" y2="80" stroke="#2563EB" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Endpoint nodes -->
+  <circle cx="48" cy="48" r="5" fill="#60A5FA" />
+  <circle cx="80" cy="48" r="5" fill="#60A5FA" />
+  <circle cx="80" cy="80" r="5" fill="#60A5FA" />
+  <circle cx="48" cy="80" r="5" fill="#60A5FA" />
+  
+  <!-- Data points between connections -->
+  <circle cx="56" cy="56" r="2.5" fill="#2563EB" />
+  <circle cx="72" cy="56" r="2.5" fill="#2563EB" />
+  <circle cx="72" cy="72" r="2.5" fill="#2563EB" />
+  <circle cx="56" cy="72" r="2.5" fill="#2563EB" />
+</svg>

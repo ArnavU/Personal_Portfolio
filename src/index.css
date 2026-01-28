@@ -66,9 +66,46 @@
         color-mix(in srgb, var(--color-primary) 20%, transparent),
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
+
+  .pdf-shimmer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .pdf-page-shimmer {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background: var(--color-surface);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* Shimmer animation */
+  .shimmer {
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(92, 89, 89, 0.283),
+      transparent
+    );
+    animation: shimmer 1.4s infinite;
+  }
+
+
 }
 
 @layer utilities {
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
   @keyframes fade-in {
     from {
       opacity: 0;
