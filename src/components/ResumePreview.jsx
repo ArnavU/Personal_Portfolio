@@ -16,8 +16,7 @@ const ResumePreview = ({ setShowCv }) => {
 		const pdfViewer = document.getElementById('pdf-viewer');
 		pdfViewer?.addEventListener('mouseenter', disableScroll);
 		pdfViewer?.addEventListener('mouseleave', enableScroll);
-		// if(!pdfViewer) document.body.style.overflow=""; // this is important since mouseleave is not recorded when the component is closed using close button
-		
+        
 		return () => {
 			pdfViewer?.removeEventListener('mouseenter', disableScroll);
 			pdfViewer?.removeEventListener('mouseleave', enableScroll);
@@ -60,7 +59,7 @@ const ResumePreview = ({ setShowCv }) => {
 					}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="absolute bottom-4 right-4 z-10 rounded-lg bg-black/70 px-4 py-2 text-white"
+					className="absolute bottom-20 border-2 md:bottom-4 right-4 z-10 rounded-lg bg-black/70 px-4 py-2 text-white"
 				>
 					⬇ Download PDF
 				</a>
