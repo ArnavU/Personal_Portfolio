@@ -1,6 +1,6 @@
 import {Button} from "../components/Button"
 import {AnimatedBorderButton} from "../components/AnimatedBorderButton"
-import {ArrowRight, Download, Github, Linkedin} from "lucide-react"
+import {ArrowRight, FileBadge, Github, Linkedin } from "lucide-react"
 import { GITHUB_URL, LINKEDIN_URL } from "../data/constants";
 // import Skills from "./Skills";
 
@@ -69,8 +69,8 @@ const Hero = ({setShowCv}) => {
                 </Button>
               </a>
               <AnimatedBorderButton onClick={() => setShowCv(prev => !prev)}>
-                <Download className="w-5 h-5" />
-                Download CV
+                <FileBadge className="w-5 h-5" />
+                  Resume
               </AnimatedBorderButton> 
             </div>
 
