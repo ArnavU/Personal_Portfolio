@@ -9,6 +9,7 @@ import Projects from "./Sections/Projects";
 import Testimonials from "./Sections/Testimonials";
 import Skills from "./Sections/Skills";
 import ResumePreview from "./components/ResumePreview";
+import CodingProfile from "./Sections/CodingProfile";
 
 const App = () => {
 	const [showCv, setShowCv] = useState(false);
@@ -26,6 +27,7 @@ const App = () => {
 					<About />
 					<Projects />
 					<Experience />
+					<CodingProfile />
 					<Testimonials />
 					<Contact />
 				</main>
