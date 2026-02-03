@@ -1,4 +1,14 @@
+import { useEffect } from "react"
+
 const CodingProfile = () => {
+    useEffect(() => {
+        fetch("/api/leetcode?username=arnav_umarkar")
+        .then(res => res.json())
+        .then((data) => {
+            console.log("Leetcode Response data: ", data)
+        });
+    }, [])
+
     return (
         <section id="coding-profile" className="py-16 md:py-24">
             <div className="max-w-4xl mx-auto px-4 md:px-8">
