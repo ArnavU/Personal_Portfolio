@@ -13,7 +13,7 @@ const CodingProfile = () => {
                         href="https://leetcode.com/arnavu" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-full hover:opacity-90 transition-opacity duration-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl"
+                        className="bg-black w-full duration-300 rounded-lg overflow-hidden shadow-lg hover:shadow-xl"
                     >
                         <img 
                             src="https://leetcard.jacoblin.cool/arnavu?theme=dark&font=Inter&ext=heatmap" 
