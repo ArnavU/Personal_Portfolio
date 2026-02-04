@@ -59,3 +59,25 @@ export const CONTEST_INFO_QUERY =
             }
         }
     }`
+
+export const SUBMISSION_PROGRESS_QUERY = 
+    `query userSessionProgress($username: String!) {
+        allQuestionsCount {
+            difficulty
+            count
+        }
+        matchedUser(username: $username) {
+            submitStats {
+                acSubmissionNum {
+                    difficulty
+                    count
+                    submissions
+                }
+                totalSubmissionNum {
+                    difficulty 
+                    count
+                    submissions
+                }
+            }
+        }
+    }`

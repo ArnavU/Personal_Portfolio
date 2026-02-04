@@ -10,7 +10,10 @@ export const PROJECT_MOVIE_BIRD_URL = "https://netflix-gpt-azure.vercel.app/"
 // ****************** Project GitHub URLs ******************
 export const GITHUB_MOOC_URL = "https://github.com/ArnavU/MOOC_Portal";
 export const GITHUB_CRS_URL = "https://github.com/ArnavU/Project-CRS-Frontend";
-export const GITHUB_MOVIE_BIRD_URL = "https://github.com/ArnavU/netflix-gpt"
+export const GITHUB_MOVIE_BIRD_URL = "https://github.com/ArnavU/netflix-gpt";
 
 // ******************** Resume Drive Link *******************
-export const RESUME_DRIVE_ID = "1bX_K0BSxixrjOPVAVG4mbYaLiBZOdNfs"
+export const RESUME_DRIVE_ID = "1bX_K0BSxixrjOPVAVG4mbYaLiBZOdNfs";
+
+// ********************* Other Constants *********************
+export const LEETCODE_USERNAME = "ArnavU";

@@ -29,7 +29,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const tLen = testimonials.length;
+	const tLen = testimonials.length;
 	const [activeIdx, setActiveIdx] = useState(0);
 
 	return (
@@ -68,45 +68,55 @@ const Testimonials = () => {
 									alt={testimonials[activeIdx].author}
 									className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
 								/>
-                <div>
-  								<div className="font-semibold">
-  									{testimonials[activeIdx].author}
-  								</div>
-  								<div className="text-sm text-muted-foreground">
-  									{testimonials[activeIdx].role}
-  								</div>
-                </div>
+								<div>
+									<div className="font-semibold">
+										{testimonials[activeIdx].author}
+									</div>
+									<div className="text-sm text-muted-foreground">
+										{testimonials[activeIdx].role}
+									</div>
+								</div>
 							</div>
 						</div>
 
-  					{/* Testimonials Navigation */}
-  					<div className="flex items-center justify-center gap-4 mt-8">
-  						<button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
-                onClick={() => setActiveIdx((prev) => (prev+tLen-1)%tLen)}
-              >
-  							<ChevronLeft />
-  						</button>
+						{/* Testimonials Navigation */}
+						<div className="flex items-center justify-center gap-4 mt-8">
+							<button
+								className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
+								onClick={() =>
+									setActiveIdx(
+										(prev) => (prev + tLen - 1) % tLen,
+									)
+								}
+							>
+								<ChevronLeft />
+							</button>
 
-              <div className="flex gap-2">
-                {testimonials.map((_, idx) => (
-                  <button 
-                    key={idx}
-                    onClick={() => {setActiveIdx(idx)}}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      idx===activeIdx
-                      ? "w-8 bg-primary"
-                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                    }`}
-                  />
-                ))}
-              </div>
+							<div className="flex gap-2">
+								{testimonials.map((_, idx) => (
+									<button
+										key={idx}
+										onClick={() => {
+											setActiveIdx(idx);
+										}}
+										className={`w-2 h-2 rounded-full transition-all duration-300 ${
+											idx === activeIdx
+												? "w-8 bg-primary"
+												: "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+										}`}
+									/>
+								))}
+							</div>
 
-              <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
-                onClick={() => setActiveIdx(prev => (prev+1)%tLen)}
-              >
-                <ChevronRight />
-              </button>
-  					</div>
+							<button
+								className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
+								onClick={() =>
+									setActiveIdx((prev) => (prev + 1) % tLen)
+								}
+							>
+								<ChevronRight />
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

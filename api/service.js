@@ -1,4 +1,4 @@
-import { CONTEST_INFO_QUERY, LANGUAGE_STATS_QUERY, PROFILE_QUERY } from "./queries.js";
+import { CONTEST_INFO_QUERY, LANGUAGE_STATS_QUERY, PROFILE_QUERY, SUBMISSION_PROGRESS_QUERY } from "./queries.js";
 
 export const getApiResult = async (item, userName) => {
 
@@ -10,6 +10,8 @@ export const getApiResult = async (item, userName) => {
                 return LANGUAGE_STATS_QUERY;
             case "contest":
                 return CONTEST_INFO_QUERY;
+            case "submission":
+                return SUBMISSION_PROGRESS_QUERY;
             default:
                 return "";
         }
@@ -23,15 +25,18 @@ export const getApiResult = async (item, userName) => {
                 return "languageStats";
             case "contest":
                 return "userContestRankingInfo";
+            case "submission":
+                return "userSessionProgress"
             default:
                 return "";
         }
     }
-
+    
     const response = await fetch("https://leetcode.com/graphql", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
+            "Referer": "https://leetcode.com/u/arnavu/"
         },
         body: JSON.stringify({
             "query": getQueryString(item),

@@ -201,7 +201,7 @@ const Contact = () => {
 
 					{/* Contact Info */}
 					<div className="space-y-6 lg:w-1/2 animate-fade-in animation-delay-400">
-						<div className="glass rounded-3xl p-5 md:p-8 pt-8">
+						<div className="glass rounded-3xl p-5 md:p-8 pt-8 border-primary/30">
 							<h3 className="text-xl font-semibold mb-6">
 								Contact Information
 							</h3>
