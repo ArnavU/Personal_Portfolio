@@ -73,7 +73,7 @@ const Experience = () => {
 					<span className="w-full block text-center text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
 						Career Journey
 					</span>
-					<h2 className="text-4xl text-center  md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+					<h2 className="text-4xl text-center md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
 						Experience that{" "}
 						<span className="font-serif italic font-normal text-white">
 							speaks volumes

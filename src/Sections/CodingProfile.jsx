@@ -62,7 +62,7 @@ function CodingProfile() {
 				<div className="text-center mb-12">
 					<div className="flex items-center justify-center mb-4">
 						<Code2 className="w-10 h-10 text-primary mr-3" />
-						<h1 className="text-4xl font-bold text-white">
+						<h1 className="text-4xl md:text-5xl font-bold text-white">
 							Coding Profile
 						</h1>
 					</div>
@@ -81,12 +81,12 @@ function CodingProfile() {
 				<div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
 					{/* Heat Map Card */}
 					<div className="lg:col-span-2 glass backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-xl hover:shadow-2xl transition-shadow">
-						<div className="rounded-md overflow-hidden">
+						<div className="overflow-hidden">
 							<img
 								src={`https://leetcard.jacoblin.cool/${LEETCODE_USERNAME}?theme=dark&font=Ubuntu&ext=heatmap`}
 								alt="LeetCode Activity"
 								id="leet-card"
-								className="w-full h-auto rounded-md cursor-pointer"
+								className="w-full h-auto cursor-pointer"
 								loading="lazy"
 							/>
 						</div>
