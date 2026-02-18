@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arnav-umarkar.vercel.app/sitemap.xml
