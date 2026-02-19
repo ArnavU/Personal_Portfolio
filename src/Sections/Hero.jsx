@@ -102,7 +102,7 @@ const Hero = ({setShowCv}) => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo-1.png"
+                  src="/profile-photo-1.webp"
                   alt="Arnav Umarkar"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
