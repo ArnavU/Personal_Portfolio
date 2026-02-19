@@ -82,6 +82,8 @@ const Testimonials = () => {
 						{/* Testimonials Navigation */}
 						<div className="flex items-center justify-center gap-4 mt-8">
 							<button
+								type="button"
+  								aria-label="Previous testimonial"
 								className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
 								onClick={() =>
 									setActiveIdx(
@@ -95,6 +97,9 @@ const Testimonials = () => {
 							<div className="flex gap-2">
 								{testimonials.map((_, idx) => (
 									<button
+										type="button"
+									    aria-label={`Go to testimonial ${idx + 1} of ${tLen}`}
+									    aria-current={activeIdx === idx ? "true" : undefined}
 										key={idx}
 										onClick={() => {
 											setActiveIdx(idx);
@@ -109,6 +114,8 @@ const Testimonials = () => {
 							</div>
 
 							<button
+								type="button"
+  								aria-label="Next testimonial"
 								className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-100"
 								onClick={() =>
 									setActiveIdx((prev) => (prev + 1) % tLen)

@@ -78,14 +78,16 @@ const Hero = ({setShowCv}) => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: GITHUB_URL },
-                { icon: Linkedin, href: LINKEDIN_URL }
+                { icon: Github, href: GITHUB_URL, name: "GitHub" },
+                { icon: Linkedin, href: LINKEDIN_URL, name: "LinkedIn" }
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
                   target="_blank"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  aria-label={`Visit my ${social.name} profile`}
+                  
                 >
                   {<social.icon className="w-5 h-5" />}
                 </a>

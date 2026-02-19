@@ -81,6 +81,7 @@ const Projects = () => {
 										href={project.link}
 										target="_blank"
 										className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+										aria-label={`Visit my project - ${project.title}`}
 									>
 										<ArrowUpRight className="w-5 h-5" />
 									</a>
@@ -88,6 +89,7 @@ const Projects = () => {
 										href={project.github}
 										target="_blank"
 										className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+										aria-label={`Project source code - ${project.title}`}
 									>
 										<Github className="w-5 h-5" />
 									</a>
@@ -100,7 +102,7 @@ const Projects = () => {
 									<h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
 										{project.title}
 									</h3>
-									<a href={project.link} target="_blank">
+									<a href={project.link} target="_blank" aria-label={`Visit my project - ${project.title}`}>
 										<ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
 									</a>
 								</div>

@@ -68,10 +68,10 @@ function CodingProfile() {
 					</div>
 					<p className="text-slate-400 text-lg flex items-baseline justify-center gap-2">
 						LeetCode Statistics • 
-						<a href={`https://leetcode.com/${LEETCODE_USERNAME}`} target="_blank" rel="noopener noreferrer"> 
+						<a href={`https://leetcode.com/${LEETCODE_USERNAME}`} target="_blank" rel="noopener noreferrer" aria-label={`Visit my leetcode profile`}> 
 							<span className="text-primary font-semibold">@{LEETCODE_USERNAME}</span>
 						</a>
-						<a href={`https://leetcode.com/${LEETCODE_USERNAME}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+						<a href={`https://leetcode.com/${LEETCODE_USERNAME}`} target="_blank" rel="noopener noreferrer" aria-label={`Visit my leetcode profile`} className="text-primary hover:text-primary/80 transition-colors">
 							<ExternalLink className="w-5 h-5" />
 						</a>
 					</p>
