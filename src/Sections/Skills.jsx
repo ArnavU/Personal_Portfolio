@@ -41,6 +41,7 @@ const Skills = () => {
                                 : (
                                     <img 
                                         src={skill?.src}
+                                        alt={skill?.name}
                                     />
                                 )}
                             </div>
