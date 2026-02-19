@@ -1,26 +1,25 @@
 import { ChevronDown } from "lucide-react";
-import StackIcon from "tech-stack-icons";
 
 const Skills = () => {
     const skills = [
-        { icon: "react", name: "React", description: "UI Library", isIcon: true, src: "" },
-        { icon: "nodejs", name: "Node.js", description: "Runtime", isIcon: true, src: "/" },
-        { icon: "expressjs", name: "Express.js", description: "Backend Framework", isIcon: true, src: "" },
-        { icon: "js", name: "JavaScript", description: "Interaction", isIcon: true, src: "" },
-        { icon: "tailwindcss", name: "Tailwind CSS", description: "Styling", isIcon: true, src: "" },
-        { icon: "mongodb", name: "MongoDB", description: "Database", isIcon: true, src: "" },
-        { icon: "mysql", name: "MySQL", description: "Database", isIcon: true, src: "" },
-        { icon: "nextjs", name: "Next.js", description: "React Framework", isIcon: true, src: "" },
-        { icon: "c++", name: "C++", description: "Programming Language", isIcon: true, src: "" },
-        { icon: "java", name: "Java", description: "Programming Language", isIcon: true, src: "" },
-        { icon: "", name: "REST APIs", description: "API Design", isIcon: false, src: "/skills_svg/restapi.svg" },
-        { icon: "postman", name: "Postman", description: "API Testing", isIcon: true, src: "" },
-        { icon: "render", name: "Render", description: "Deployment", isIcon: true, src: "" },
-        { icon: "vercel", name: "Vercel", description: "Deployment", isIcon: true, src: "" },
-        { icon: "git", name: "Git", description: "Version Control", isIcon: true, src: "" },
-        { icon: "github", name: "GitHub Actions", description: "CI/CD", isIcon: true, src: "" },
-        { icon: "", name: "Data Structures", description: "Core Skill", isIcon: false, src: "/skills_svg/dsa.svg" },
-        { icon: "", name: "Problem Solving", description: "Core Skill", isIcon: false, src: "/skills_svg/problemsolving.svg" },
+        { icon: "react", name: "React", description: "UI Library", isIcon: false, src: "/skills_svg/react.svg" },
+        { icon: "nodejs", name: "Node.js", description: "Runtime", isIcon: false, src: "/skills_svg/nodejs.svg" },
+        { icon: "expressjs", name: "Express.js", description: "Backend Framework", isIcon: false, src: "/skills_svg/expressjs.svg" },
+        { icon: "js", name: "JavaScript", description: "Interaction", isIcon: false, src: "/skills_svg/js.svg" },
+        { icon: "tailwindcss", name: "Tailwind CSS", description: "Styling", isIcon: false, src: "/skills_svg/tailwindcss.svg" },
+        { icon: "mongodb", name: "MongoDB", description: "Database", isIcon: false, src: "/skills_svg/mongodb.svg" },
+        { icon: "mysql", name: "MySQL", description: "Database", isIcon: false, src: "/skills_svg/mysql.svg" },
+        { icon: "nextjs", name: "Next.js", description: "React Framework", isIcon: false, src: "/skills_svg/nextjs.svg" },
+        { icon: "c++", name: "C++", description: "Programming Language", isIcon: false, src: "/skills_svg/c++.svg" },
+        { icon: "java", name: "Java", description: "Programming Language", isIcon: false, src: "/skills_svg/java.svg" },
+        { icon: "restapi", name: "REST APIs", description: "API Design", isIcon: false, src: "/skills_svg/restapi.svg" },
+        { icon: "postman", name: "Postman", description: "API Testing", isIcon: false, src: "/skills_svg/postman.svg" },
+        { icon: "render", name: "Render", description: "Deployment", isIcon: false, src: "/skills_svg/render.svg" },
+        { icon: "vercel", name: "Vercel", description: "Deployment", isIcon: false, src: "/skills_svg/vercel.svg" },
+        { icon: "git", name: "Git", description: "Version Control", isIcon: false, src: "/skills_svg/git.svg" },
+        { icon: "github", name: "GitHub Actions", description: "CI/CD", isIcon: false, src: "/skills_svg/github.svg" },
+        { icon: "github", name: "Data Structures", description: "Core Skill", isIcon: false, src: "/skills_svg/dsa.svg" },
+        { icon: "problemsolving", name: "Problem Solving", description: "Core Skill", isIcon: false, src: "/skills_svg/problemsolving.svg" },
     ];
 	return (
 		<section className="mb-28">
@@ -37,7 +36,7 @@ const Skills = () => {
                         >
                             <div className="w-16 p-2 bg-surface rounded-lg flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-100">
                                 {skill.isIcon
-                                ? <StackIcon variant="dark" name={skill?.icon?.toLocaleLowerCase()} /> 
+                                ? <> </>
                                 : (
                                     <img 
                                         src={skill?.src}
