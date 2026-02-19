@@ -61,6 +61,7 @@ const Navbar = () => {
                                 href={link.href}
                                 key={index}
                                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                                aria-label={`Visit ${link.label}`}
                             >
                                 {link.label}
                             </a>
@@ -80,6 +81,7 @@ const Navbar = () => {
                     ref={menuBtnRef}
                     className="relative md:hidden p-2 text-foreground cursor-pointer"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+                    aria-label={`Mobile Menu`}
                 >
                     {/* self closing div to cover the "X" SVG - svg hinders the outside click functionality */}
                     <div className="w-full h-full absolute inset-0" /> 
@@ -97,6 +99,7 @@ const Navbar = () => {
                                 key={index}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-lg text-muted-foreground hover:text-foreground py-2"
+                                aria-label={`Visit ${link.label}`}
                             >
                                 {link.label}
                             </a>
