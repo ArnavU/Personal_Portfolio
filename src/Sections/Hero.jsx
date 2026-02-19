@@ -63,7 +63,7 @@ const Hero = ({setShowCv}) => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-300">
-              <a href="#contact">
+              <a href="#contact" aria-label="Send me an email">
                 <Button size="lg">
                   Contact Me <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -87,7 +87,7 @@ const Hero = ({setShowCv}) => {
                   target="_blank"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                   aria-label={`Visit my ${social.name} profile`}
-                  
+
                 >
                   {<social.icon className="w-5 h-5" />}
                 </a>

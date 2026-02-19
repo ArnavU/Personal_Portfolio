@@ -70,7 +70,7 @@ const Navbar = () => {
                 </div>
 
                 {/* CTA Button */}
-                <a href="#contact">
+                <a href="#contact" aria-label="Send me an email">
                     <div className="hidden md:block">
                         <Button size="sm">Contact Me</Button>
                     </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
                             </a>
                         ))}
 
-                        <a href="#contact">
+                        <a href="#contact" aria-label="Send me an email">
                             <Button onClick={() => setIsMobileMenuOpen(false)}>
                                 Contact Me
                             </Button>
