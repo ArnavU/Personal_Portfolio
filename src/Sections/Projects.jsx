@@ -6,7 +6,7 @@ const projects = [
     title: "MyMOOC – Multi-Institute MOOC Platform",
     description:
       "A Massive Open Online Course (MOOC) platform supporting multiple institutes with role-based access, course and media management, secure payments, and auto-generated certificates.",
-    image: "/projects/project1.png",
+    image: "/projects/project1.avif",
     tags: ["MongoDB", "Express", "React", "Node.js", "Redux", "Razorpay"],
     link: PROJECT_MOOC_URL,
     github: GITHUB_MOOC_URL,
@@ -15,7 +15,7 @@ const projects = [
     title: "College Finder & Recommendation System",
     description:
       "A college prediction system for CET & JEE students using rank, percentile, category, and preferences, powered by PDF data extraction and AI-enhanced insights.",
-    image: "/projects/project2.png",
+    image: "/projects/project2.avif",
     tags: ["MongoDB", "Express", "React", "Node.js", "Python"],
     link: PROJECT_CRS_URL,
     github: GITHUB_CRS_URL,
@@ -24,7 +24,7 @@ const projects = [
     title: "MovieBird – Movie Discovery Platform",
     description:
       "A Netflix-like movie discovery app with authentication, trailer playback, and AI-powered genre-based recommendations.",
-    image: "/projects/project3.png",
+    image: "/projects/project3.avif",
     tags: ["React", "Redux Toolkit", "Tailwind CSS", "Firebase", "OpenAI"],
     link: PROJECT_MOVIE_BIRD_URL,
     github: GITHUB_MOVIE_BIRD_URL,
