@@ -1,5 +1,6 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 import { GITHUB_URL, LINKEDIN_URL } from "../data/constants";
+import LaserFlow from "../components/LaserFlow";
 
 const socialLinks = [
   { icon: Github, href: GITHUB_URL, label: "GitHub" },
@@ -16,8 +17,8 @@ const footerLinks = [
 export const Footer = () => {
   const currentYear = (new Date()).getFullYear(); 
   return (
-    <div className="py-12 border-t border-border mt-12">
-      <div className="container mx-auto px-6">
+    <footer className="py-12 border-t border-border relative">
+      <div className="container mx-auto px-6 z-10 relative">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
@@ -57,6 +58,31 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+
+      {/* <div
+        className="absolute h-[800%] w-full bottom-0 right-0"
+      >
+        <LaserFlow
+              color="#FF4444"
+              // color="#4A9EFF"
+              horizontalBeamOffset={0.32}
+              verticalBeamOffset={-0.375}
+              flowSpeed={0.35}
+              verticalSizing={33.8}
+              horizontalSizing={0.5}
+              fogIntensity={1}
+              fogScale={0.25}
+              wispSpeed={12.0}
+              wispIntensity={7.0}
+              flowStrength={0.3}
+              decay={1.2}
+              falloffStart={2.0}
+              fogFallSpeed={0.8}
+              wispDensity={1.2}
+              mouseTiltStrength={0}
+              className="w-full h-full"
+            />
+        </div> */}
+    </footer>
   )
 }
